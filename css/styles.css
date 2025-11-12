@@ -234,3 +234,97 @@ body {
 	background: rgba(15, 23, 42, 0.7);
 	border: 1px solid rgba(148, 163, 184, 0.35);
 }
+
+/* Правая часть hero */
+
+.hero__visual {
+	display: flex;
+	justify-content: center;
+}
+
+.hero-card {
+	width: 100%;
+	max-width: 360px;
+	background: radial-gradient(circle at top left, #1f2937 0, #020617 55%);
+	border-radius: var(--radius-lg);
+	padding: 16px;
+	border: 1px solid rgba(148, 163, 184, 0.35);
+	box-shadow: var(--shadow-soft);
+}
+
+.hero-card__badge {
+	display: inline-block;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	color: #e5e7eb;
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: rgba(15, 23, 42, 0.8);
+	border: 1px solid rgba(148, 163, 184, 0.5);
+	margin-bottom: 10px;
+}
+
+.hero-card__screen {
+	background: #020617;
+	border-radius: 12px;
+	overflow: hidden;
+	border: 1px solid rgba(31, 41, 55, 0.9);
+}
+
+.hero-card__bar {
+	display: flex;
+	gap: 6px;
+	padding: 6px 8px;
+	background: linear-gradient(to right, #020617, #111827);
+}
+
+.hero-card__bar span {
+	width: 7px;
+	height: 7px;
+	border-radius: 999px;
+	background: rgba(148, 163, 184, 0.6);
+}
+
+.hero-card__content {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.hero-card__block {
+	flex: 1;
+	height: 20px;
+	border-radius: 6px;
+	background: linear-gradient(
+		90deg,
+		rgba(148, 163, 184, 0.2),
+		rgba(79, 70, 229, 0.55)
+	);
+}
+
+.hero-card__block--wide {
+	width: 80%;
+	height: 24px;
+	background: linear-gradient(
+		90deg,
+		rgba(56, 189, 248, 0.6),
+		rgba(79, 70, 229, 0.7)
+	);
+}
+
+.hero-card__row {
+	display: flex;
+	gap: 8px;
+}
+
+.hero-card__row--small .hero-card__block {
+	height: 14px;
+}
+
+.hero-card__caption {
+	margin-top: 10px;
+	font-size: 12px;
+	color: var(--text-muted);
+}
